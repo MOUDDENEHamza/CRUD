@@ -1,0 +1,17 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: #eeeeee;
+}
+
+button {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+}
+
+table {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}

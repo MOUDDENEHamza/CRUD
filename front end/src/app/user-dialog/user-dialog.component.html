@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>{{data}} user</h1>
+<div mat-dialog-content>
+  <form [formGroup]="userFormGroup">
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Firstname</mat-label>
+      <input matInput placeholder="Joe" formControlName="firstname" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Lastname</mat-label>
+      <input matInput placeholder="Doe" formControlName="lastname" required>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button [disabled]="this.userFormGroup.invalid" [mat-dialog-close]="this.userFormGroup">{{data}}</button>
+</div>
